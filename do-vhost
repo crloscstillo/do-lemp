@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+##############
+# Virtual host
+##############
+# Handy script for creating
+# virtual hosts on nginx
+
+# Name of the virtual host
+VHOST=${1}
+
+# Ask for virtualhost's name
+if [ -z "$VHOST" ]; then
+  printf "What will be the \033[33mname of your virtual host\033[0m? "
+  read -r VHOST
+fi
+
+curl https://gist.githubusercontent.com/crloscstillo/11148057/raw/67ede0ad7f9f790c5448bbd7727dc7aef357087a/nginx-vhost > ./${VHOST}
