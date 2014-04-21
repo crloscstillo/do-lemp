@@ -16,5 +16,7 @@ git clone https://github.com/crloscstillo/do-lemp.git /usr/local/bin
 
 ### Locales
 We'll first fix some locale bugs by running `sudo do-locales`.  
-Then we'll have to source the *.bashrc* file again: `source ~/.bashrc`.  
+Then we'll have to source the *.bashrc* file again: `source ~/.bashrc`.
+
+### Finisht it
 Now simply run `sudo do-install`.
