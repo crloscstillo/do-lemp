@@ -14,4 +14,7 @@ sudo apt-get install -y git-core
 git clone https://github.com/crloscstillo/do-lemp.git /usr/local/bin
 ```
 
-Now simply run `sudo do-install`
+### Locales
+We'll first fix some locale bugs by running `sudo do-locales`.  
+Then we'll have to source the *.bashrc* file again: `source ~/.bashrc`.  
+Now simply run `sudo do-install`.

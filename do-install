@@ -8,5 +8,8 @@
 # then erases itself.
 
 
+# Reconfigure locales (after running do-locales)
+sudo dpkg-reconfigure locales
+
 # Call locales
-sudo do-locales
+sudo do-lemp
