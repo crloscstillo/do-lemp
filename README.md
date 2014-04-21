@@ -9,7 +9,7 @@ Simply clone this repo inside your `/usr/local/bin` directoy (or anywhere you'd 
 You should also first **make sure you have git installed**. Example:
 
 ```
-	sudo apt-get update
-	sudo apt-get install -y git-core
-	git clone https://github.com/crloscstillo/do-lemp.git /usr/local/bin`
+sudo apt-get update
+sudo apt-get install -y git-core
+git clone https://github.com/crloscstillo/do-lemp.git /usr/local/bin`
 ``` 
