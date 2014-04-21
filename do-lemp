@@ -64,6 +64,7 @@ sudo service nginx start
 # Configure PHP to work with nginx
 green "Making PHP work with nginx"
 sudo sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g" /etc/php5/fpm/php.ini
+service php5-fpm restart
 
 # Install bash_it
 green "Installing bash_it"
