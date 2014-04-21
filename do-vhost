@@ -15,4 +15,19 @@ if [ -z "$VHOST" ]; then
   read -r VHOST
 fi
 
-curl https://gist.githubusercontent.com/crloscstillo/11148057/raw/67ede0ad7f9f790c5448bbd7727dc7aef357087a/nginx-vhost > ./${VHOST}
+curl https://gist.githubusercontent.com/crloscstillo/11148057/raw/a2c6eebaf6c0692c30ad19d88279131abfeda95d/nginx-vhost > ./${VHOST}
+
+# Replace 'example.com' with the vhost name
+sudo sed -i "s/example.com/${VHOST}/g" ${VHOST}
+
+# Move the file to the configuration folder
+sudo mv ${VHOST} /etc/nginx/sites-available/${VHOST}
+
+# Symlink
+sudo ln -s /etc/nginx/sites-available/${VHOST} /etc/nginx/sites-enabled/${VHOST}
+
+# Test the configuration
+nginx -t
+
+# Restart nginx
+sudo service nginx restart
