@@ -79,5 +79,7 @@ source ~/.bash_aliases
 yellow "Know the aliases: https://gist.github.com/crloscstillo/5c8c25df5c4ee878cb8e"
 
 # Install MySQL
-green "Finally, install MySQL"
-sudo apt-get install -y mysql-server 
+green "Finally, install MySQL."
+yellow "Your input will be needed"
+sudo apt-get install -y mysql-server
+mysql_secure_installation
