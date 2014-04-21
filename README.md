@@ -11,5 +11,7 @@ You should also first **make sure you have git installed**. Example:
 ```
 sudo apt-get update
 sudo apt-get install -y git-core
-git clone https://github.com/crloscstillo/do-lemp.git /usr/local/bin`
-``` 
+git clone https://github.com/crloscstillo/do-lemp.git /usr/local/bin
+```
+
+Now simply run `sudo do-install`
