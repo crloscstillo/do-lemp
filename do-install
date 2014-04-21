@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+#######################
+# LEMP Stack >> Install
+#######################
+# This is the master file.
+# It calls and runs all other files and
+# then erases itself.
+
+
+# Call locales
+sudo do-locales
