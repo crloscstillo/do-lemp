@@ -77,3 +77,7 @@ green "Bringing some useful aliases"
 curl https://gist.githubusercontent.com/crloscstillo/5c8c25df5c4ee878cb8e/raw/ebfd78467874eca1d172cb0e2c509e42c614cce0/bash_aliases.sh > ~/.bash_aliases
 source ~/.bash_aliases
 yellow "Know the aliases: https://gist.github.com/crloscstillo/5c8c25df5c4ee878cb8e"
+
+# Install MySQL
+green "Finally, install MySQL"
+sudo apt-get install -y mysql-server 
