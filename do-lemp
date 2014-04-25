@@ -28,13 +28,14 @@ function yellow
 ##
 
 # Initial update
-green "Updating again (just in case, brotha')"
+green "Installing the LEMP stack"
+yellow "You might want to stay around"
 sudo apt-get update
 
 # Tools
 green "Installing basic tools"
 sudo apt-get install -y vim unzip curl wget
-sudo apt-get install -y tree
+sudo apt-get install -y tree beanstalkd
 sudo apt-get install -y build-essential
 sudo apt-get install -y python-software-properties
 
