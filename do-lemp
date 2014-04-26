@@ -76,7 +76,7 @@ source ~/.bash_profile
 # Bring .bash_aliases
 green "Bringing some useful aliases"
 curl https://gist.githubusercontent.com/crloscstillo/5c8c25df5c4ee878cb8e/raw/d71e95f0f188352b33db04c4c67e66d5fe879dbb/bash_aliases.sh > ~/.bash_aliases
-source ~/.bash_aliases
+echo ". ~/.bash_aliases" >> ~/.bash_profile
 yellow "Know the aliases: https://gist.github.com/crloscstillo/5c8c25df5c4ee878cb8e"
 
 # Install MySQL
