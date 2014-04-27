@@ -9,6 +9,7 @@
 
 
 # Reconfigure locales (after running do-locales)
+sudo dpkg-reconfigure tzdata
 sudo dpkg-reconfigure locales
 
 # Call locales
