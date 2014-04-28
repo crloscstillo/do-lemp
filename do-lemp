@@ -68,10 +68,10 @@ sudo sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g" /etc/php5/fpm/php.ini
 service php5-fpm restart
 
 # Install bash_it
-green "Installing bash_it"
-git clone https://github.com/revans/bash-it.git ~/.bash_it
-~/.bash_it/install.sh
-source ~/.bash_profile
+# green "Installing bash_it"
+# git clone https://github.com/revans/bash-it.git ~/.bash_it
+# ~/.bash_it/install.sh
+# source ~/.bash_profile
 
 # Bring .bash_aliases
 green "Bringing some useful aliases"
